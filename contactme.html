@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+ 
+    <h1>Contact Me</h1>
+
+    <form action="mailto:rashadkhalilli15@example.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Your Info</legend>
+
+        <p>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" required />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" required />
+        </p>
+        <p>
+          <label for="subject">Subject:</label>
+          <input id="subject" name="subject" type="text" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences (optional)</legend>
+
+        <p>Preferred contact method:</p>
+        <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
+        <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+
+        <p>Topics:</p>
+        <label><input type="checkbox" name="topics" value="tutoring" /> Tutoring</label>
+        <label><input type="checkbox" name="topics" value="collaboration" /> Collaboration</label>
+        <label><input type="checkbox" name="topics" value="other" /> Other</label>
+
+        <p>
+          <label for="referrer">How did you find me?</label>
+          <select id="referrer" name="referrer">
+            <option value="search">Search</option>
+            <option value="friend">Friend</option>
+            <option value="social">Social media</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <p>
+          <label for="message">Your message:</label><br />
+          <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..."></textarea>
+        </p>
+      </fieldset>
+ 
+      <p><button type="submit">Submit</button></p>
+    </form>
+
+
+    </body>
+</html>
