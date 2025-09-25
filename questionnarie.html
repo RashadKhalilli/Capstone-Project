@@ -1,11 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+    <meta charset="utf-8" />
+    <title>Questionnaire — My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
+    <body>
+        <header id="top">
+            <h1>Questionnaire</h1>
+            <nav>
+            <a href="home.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="weeklyschedule.html">Weekly Schedule</a> |
+            <a href="contactme.html">Contact</a> |
+            <a href="questionnarie.html">Questionnaire</a> |
+            </nav>
+        </header>
 
+        <section aria-labelledby="q-heading">
+        <h2 id="q-heading">Student Questionnaire</h2>
 
+        <!-- Submit as plain text; replace with your email if you want mail draft on submit -->
+        <form action="mailto:rkhalilli17994@ada.edu.az" method="post" enctype="text/plain">
+            <fieldset>
+            <legend>About You</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required />
+            </p>
+            <p>
+                <label for="student_id">Student ID (optional):</label>
+                <input id="student_id" name="student_id" type="text" />
+            </p>
+            </fieldset>
 
+            <fieldset>
+            <legend>Academic Info</legend>
+            <p>
+                <label for="year">Class Year:</label>
+                <select id="year" name="class_year">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                </select>
+            </p>
 
+            <p>Preferred Study Time:</p>
+            <label><input type="radio" name="study_time" value="morning"  /> Morning</label>
+            <label><input type="radio" name="study_time" value="afternoon" /> Afternoon</label>
+            <label><input type="radio" name="study_time" value="evening" /> Evening</label>
 
+            <p>Interests (choose any):</p>
+            <label><input type="checkbox" name="interests" value="webdev" /> Web Development</label>
+            <label><input type="checkbox" name="interests" value="data" /> Data Science</label>
+            <label><input type="checkbox" name="interests" value="networks" /> Computer Networks</label>
+            <label><input type="checkbox" name="interests" value="security" /> Cybersecurity</label>
 
+            <p>
+                <label for="workload">Rate your current workload (1–5):</label>
+                <input id="workload" name="workload" type="range" min="1" max="5" value="3" />
+            </p>
 
+            <p>
+                <label for="favorite_course">Favorite Course:</label>
+                <input id="favorite_course" name="favorite_course" type="text" />
+            </p>
+            </fieldset>
+
+            <fieldset>
+            <legend>Feedback</legend>
+            <p>
+                <label for="comments">Comments or Suggestions:</label><br />
+                <textarea id="comments" name="comments" rows="6" cols="50" placeholder="Write your thoughts here..."></textarea>
+            </p>
+            </fieldset>
+
+            <p>
+            <button type="submit">Send Questionnaire</button>
+            <button type="reset">Reset</button>
+            </p>
+        </form>
+        </section>
+    </body>
 </html>

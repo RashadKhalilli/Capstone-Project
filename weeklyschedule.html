@@ -1,4 +1,86 @@
-<!DOCTYPE html>
-    <html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weekly Schedule — My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header id="top">
+      <h1>Weekly Schedule</h1>
+      <nav>
+        <a href="home.html">Home</a> |
+        <a href="education.html">Education</a> |
+        <a href="weeklyschedule.html">Weekly Schedule</a> |
+        <a href="contactme.html">Contact</a> |
+        <a href="questionnarie.html">Questionnaire</a> |
+      </nav>
+    </header>
 
-    </html>
+      <section aria-labelledby="sched-heading">
+        <h2 id="sched-heading">Monday-Sunday Schedule</h2>
+
+        <!-- Equal-size cells + centered text:
+            - width="100%" + <colgroup> for equal column widths
+            - height on each row for equal row height
+            - align="center" + valign="middle" to center text -->
+        <table width="100%" border="1" cellpadding="12" cellspacing="0" rules="all" frame="box">
+
+          <!-- 8 equal-width columns -->
+          <colgroup>
+            <col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%">
+            <col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%">
+          </colgroup>
+
+          <thead>
+            <tr align="center" valign="middle" height="54">
+              <th scope="col">Time</th>
+              <th scope="col">Monday</th>
+              <th scope="col">Tuesday</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+              <th scope="col">Saturday</th>
+              <th scope="col">Sunday</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">08:30-09:45</th>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">10:00-11:15</th>
+              <td></td><td>Web &amp; Mobile I</td><td></td><td>Web &amp; Mobile I</td><td></td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">11:30-12:45</th>
+              <td></td><td></td><td>Database Systems</td><td></td><td>Database Systems</td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">13:00-14:15</th>
+              <td>Computer Networks</td><td></td><td></td><td></td><td>Computer Networks</td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">14:30-15:45</th>
+              <td>Azerbaijani Culture</td><td></td><td>Azerbaijani Culture</td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">16:00-17:15</th>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">17:30-18:45</th>
+              <td>Competetive Programming</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr align="center" valign="middle" height="64">
+              <th scope="row">19:00-20:15</th>
+              <td></td><td></td><td></td><td></td><td>Competetive Programming</td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+  </body>
+</html>
