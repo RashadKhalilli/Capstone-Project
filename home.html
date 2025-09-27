@@ -1,69 +1,92 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Home — My Personal Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <header>
-    <h1>My Personal Website</h1>
+  <head>
+      <meta charset="utf-8" />
+      <title>Home — My Personal Website</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link type="image/png" sizes="16x16" rel="icon" href="images/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>My Personal Website ✨</h1>
+      <nav>
+        <a href="home.html">Home</a> |
+        <a href="education.html">Education</a> |
+        <a href="weeklyschedule.html">Weekly Schedule</a> |
+        <a href="contactme.html">Contact</a> |
+        <a href="questionnarie.html">Questionnaire</a> |
+      </nav>
+    </header>
 
-    <!-- NAV BAR-->
-    <nav>
-      <a href="home.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="weeklyschedule.html">Weekly Schedule</a> |
-      <a href="contactme.html">Contact</a> |
-      <a href="questionnarie.html">Questionnaire</a> |
-    </nav>
-  </header>
-
-  <main>
     <section>
       <h2>About Me</h2>
-      <img src="images/myprofilepic.png" alt="Profile picture" />
+
+      <!-- Circular profile photo using inline SVG -->
+      <figure>
+        <svg viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="profileTitle">
+          <title id="profileTitle">Profile picture of Rashad Khalilli</title>
+          <defs>
+            <clipPath id="avatarClip">
+              <circle cx="100" cy="100" r="100"></circle>
+            </clipPath>
+          </defs>
+          <image
+            href="images/myprofilepic.png"
+            x="0" y="0" width="200" height="200"
+            preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#avatarClip)"></image>
+        </svg>
+      </figure>
+
       <h2>Rashad Khalilli</h2>
       <h3>BSIT Student</h3>
       <h4>ADA University</h4>
-      <p>Hi Everyone, I am Rashad. I am 3rd year Information Technology Student at ADA University.</p>
+      <p>Hi! I'm Rashad Khalilli, a 20-year-old BSIT student at ADA University. I'm most interested in building practical software—tools that solve small, real problems for real people.
+        At school I'm focused on Web & Mobile development, computer networks, and database systems. I like projects that let me connect these areas end-to-end: clean interfaces, reliable APIs, and data that's modeled well.<br>
+        Chess is my favorite way to train focus and strategy. I also play table tennis, cook to unwind, and follow markets; trading keeps me disciplined and analytical.
+        Coding side projects help me learn fast—each one teaches me something new about debugging, performance, or design.
+      
+      </p>
     </section>
 
     <section id="hobbies">
-    <h2>Hobbies</h2>
-    <p>Here are list of my hobbies,you can click them and see my joyful moments of doing them :) </p>
-        <ul>
-            <li>
-            Chess —
-            <a href="images/photography.jpg">image</a> ·
-            <a href= https://youtu.be/GsaiMznsFGg>video</a>
-            </li>
-            <li>
-            Trading (Crypto , Stocks) —
-            <a href="images/guitar.jpg">image</a> ·
-            <a href="https://youtu.be/your-guitar-video">video</a>
-            </li>
-            <li>
-            Table Tennis —
-            <a href="images/basketball.jpg">image</a> ·
-            <a href="videos/basketball.mp4">video</a>
-            </li>
-            <li>
-            Cooking —
-            <a href="images/cooking.jpg">image</a> ·
-            <a href="videos/cooking.mp4">video</a>
-            </li>
-            <li>
-            Coding Projects —
-            <a href="images/coding.jpg">image</a> ·
-            <a href="https://youtu.be/your-coding-demo">video</a>
-            </li>
-        </ul>
+      <h2>Hobbies</h2>
+      <p>Here are list of my hobbies, showing real images/videos of my joyful moments :)</p>
+
+      <ul>
+        <li>
+          <h3>Chess — My video</h3>
+          <!-- Embed YouTube directly -->
+          <iframe width="640" height="360"
+                  src="https://www.youtube.com/embed/GsaiMznsFGg"
+                  title="Chess video"
+                  frameborder="0"
+                  allowfullscreen>
+          </iframe>
+        </li>
+
+        <li>
+          <h3>Trading (Crypto, Stocks)</h3>
+          <img src="images\crypto.png" alt="Illustrative trading image" width="640" height="360" />
+        </li>
+
+        <li>
+          <h3>Cooking</h3>
+        </li>
+
+        <li>
+          <h3>Table Tennis</h3>
+          <img src="images\tabletennis.jpg" alt="Illustrative table tennis match" width="640" height="360" />
+        </li>
+
+        <li>
+          <h3>Coding Projects</h3>
+        </li>
+      </ul>
     </section>
-  </main>
 
   <footer>
-    <p>© 2025 Rashad Khalilli</p>
+    <p>© Copyright 2025 Rashad Khalilli</p>
   </footer>
-</body>
+  </body>
 </html>
