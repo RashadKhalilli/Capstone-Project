@@ -1,61 +1,62 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Contact Me</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link type="image/png" sizes="16x16" rel="icon" href= "images/favicon.png">
-    </head>
-    <body>
- 
-  <header>
-    <h1>Contact Me</h1>
-
-     <nav>
-      <a href="home.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="weeklyschedule.html">Weekly Schedule</a> |
-      <a href="contactme.html">Contact</a> |
-      <a href="questionnarie.html">Questionnaire</a> |
-    </nav>
-  </header>
-
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="image/png" sizes="16x16" rel="icon" href="images/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me 📬</h1>
+      <nav>
+        <a href="home.html">Home</a> |
+        <a href="education.html">Education</a> |
+        <a href="weeklyschedule.html">Weekly Schedule</a> |
+        <a href="contactme.html">Contact</a> |
+        <a href="questionnarie.html">Questionnaire</a> |
+      </nav>
+    </header>
+    <section>
+    <h2>Contact</h2>
+    <!-- Plain-text email submission -->
     <form action="mailto:rkhalilli17994@ada.edu.az" method="post" enctype="text/plain">
       <fieldset>
         <legend>Your Info</legend>
 
         <p>
-          <label for="name">Name:</label>
-          <input id="name" name="name" type="text" required />
+          <label for="firstName">Name:</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </p>
+        <p>
+          <label for="lastName">Surname:</label>
+          <input id="lastName" name="lastName" type="text" required />
         </p>
         <p>
           <label for="email">Email:</label>
           <input id="email" name="email" type="email" required />
         </p>
-        <p>
-          <label for="subject">Subject:</label>
-          <input id="subject" name="subject" type="text" />
-        </p>
       </fieldset>
 
       <fieldset>
-        <legend>Preferences (optional)</legend>
+        <legend>Subject Topic</legend>
 
-        <p>Preferred contact method:</p>
-        <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
-        <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+        <!-- Removed the email/phone radio chooser -->
 
         <p>Topics:</p>
         <label><input type="checkbox" name="topics" value="tutoring" /> Tutoring</label>
         <label><input type="checkbox" name="topics" value="collaboration" /> Collaboration</label>
         <label><input type="checkbox" name="topics" value="other" /> Other</label>
-
+        <label for="topics_other">Please specify:</label>
+        <input id="topics_other" name="topics_other" type="text" placeholder="If 'Other', type here" />
+        
         <p>
           <label for="referrer">How did you find me?</label>
           <select id="referrer" name="referrer">
             <option value="search">Search</option>
             <option value="friend">Friend</option>
             <option value="social">Social media</option>
+            <option value="random">Randomly</option>
           </select>
         </p>
       </fieldset>
@@ -63,18 +64,25 @@
       <fieldset>
         <legend>Message</legend>
         <p>
-          <label for="message">Your message:</label><br />
-          <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..."></textarea>
+          <label for="message">Your message about subject:</label><br />
+          <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..." required></textarea>
         </p>
       </fieldset>
- 
+
       <p><button type="submit">Submit</button></p>
     </form>
 
-    </body>
-
-    <footer>
-        <p>© Copyright 2025 Rashad Khalilli</p>
-     </footer>
-
+    <!-- Simple phone contact (HTML-only links) -->
+    <section aria-labelledby="phone-contact">
+      <h2 id="phone-contact">Prefer phone?</h2>
+      <p>
+        <a href="tel:+994555756261">Call me</a> •
+      </p>
+    </section>
+  </body>
+   
+  <footer>
+    <p>© Copyright 2025 Rashad Khalilli</p>
+  </footer>
+ 
 </html>

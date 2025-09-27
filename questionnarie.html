@@ -23,11 +23,17 @@
         <h2 id="q-heading">Student Questionnaire</h2>
 
         <form action="mailto:rkhalilli17994@ada.edu.az" method="post" enctype="text/plain">
+
             <fieldset>
             <legend>About You</legend>
             <p>
-                <label for="name">Name:</label>
-                <input id="name" name="name" type="text" required />
+                <label for="firstName">Name:</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </p>
+
+            <p>
+                <label for="lastName">Surname:</label>
+                <input id="lastName" name="lastName" type="text" required />
             </p>
             <p>
                 <label for="email">Email:</label>
@@ -70,7 +76,7 @@
             <p>Interests (choose any):</p>
             <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
             <label><input type="checkbox" name="interests" value="volunteering" /> Being Volunteer</label>
-            <label><input type="checkbox" name="interests" value="No interest" /> Nothing :)</label>
+            <label><input type="checkbox" name="interests" value="reading" /> Reading</label>
             <label><input type="checkbox" name="interests" value="other" /> Other</label>
             <!-- HTML-only: show a text box next to “Other” so students can specify -->
             <label for="interests_other">Please specify:</label>
