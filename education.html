@@ -1,68 +1,60 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Education — My Personal Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link type="image/png" sizes="16x16" rel="icon" href= "images/favicon.png">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Education — Float + Position Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+
     </head>
     <body>
-        <header id="top">
-            <h1>Education</h1>
-            <nav>
-            <a href="home.html">Home</a> |
-            <a href="education.html">Education</a> |
-            <a href="weeklyschedule.html">Weekly Schedule</a> |
-            <a href="contactme.html">Contact</a> |
-            <a href="questionnarie.html">Questionnaire</a> |
-            </nav>
-        </header>
+    <header>
+        <h1>Education</h1>
+        <nav>
+        <a href="home.html">Home</a> |
+        <a href="education.html">Education</a> |
+        <a href="weeklyschedule.html">Weekly Schedule</a> |
+        <a href="contactme.html">Contact</a> |
+        <a href="questionnarie.html">Questionnaire</a> |
+        </nav>
+    </header>
 
-        <section aria-labelledby="edu-heading">
-        <h2 id="edu-heading">Education History</h2>
+    <section>
+        <div class="edu-wrapper">
+        <div class="edu-card">
+            <h3>167 number Middle School</h3>
+            <p><strong>Level:</strong> Primary / Grades 1–4</p>
+            <p><strong>Years:</strong> 2011–2014</p>
+            <p><strong>Highlights:</strong> Math Contest Participant</p>
+        </div>
 
-        <!-- Random placeholder names; replace with your real info -->
-        <table width="100%" border="1" cellpadding="8" cellspacing="0" rules="all" frame="box">
-            <thead>
-            <tr align="center" valign="middle" height="48">
-                <th scope="col">Institution</th>
-                <th scope="col">Level / Program</th>
-                <th scope="col">Years</th>
-                <th scope="col">Highlights</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr align="center" valign="middle" height="44">
-                <td>167 number Middle School</td>
-                <td>Primary / Grades 1-4</td>
-                <td>2011-2014</td>
-                <td>Math Contest Participant</td>
-            </tr>
-            <tr align="center" valign="middle" height="44">
-                <td>Genc Istedadlar Lyceum</td>
-                <td>Middle / Grade 5</td>
-                <td>2014-2015</td>
-                <td>-</td>
-            </tr>
-            <tr align="center" valign="middle" height="44">
-                <td>TDV Baku Turk Lyceum</td>
-                <td>Middle &amp; High / Grades 6-11</td>
-                <td>2015-2022</td>
-                <td>Chess Club Member</td>
-            </tr>
-            <tr align="center" valign="middle" height="44">
-                <td>ADA University</td>
-                <td>Bachelor of Science in Information Technology</td>
-                <td>2022-Present</td>
-                <td>3rd-Year Student</td>
-            </tr>
-            </tbody>
-        </table>
-        </section>
+        <div class="edu-card">
+            <h3>Genc Istedadlar Lyceum</h3>
+            <p><strong>Level:</strong> Middle / Grade 5</p>
+            <p><strong>Years:</strong> 2014–2015</p>
+            <p><strong>Highlights:</strong> –</p>
+        </div>
 
+        <div class="edu-card">
+            <h3>TDV Baku Turk Lyceum</h3>
+            <p><strong>Level:</strong> Middle & High / Grades 6–11</p>
+            <p><strong>Years:</strong> 2015–2022</p>
+            <p><strong>Highlights:</strong> Chess Club Member</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>ADA University</h3>
+            <p><strong>Level:</strong> Bachelor of Science in IT</p>
+            <p><strong>Years:</strong> 2022–Present</p>
+            <p><strong>Highlights:</strong> 3rd-Year Student</p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Rashad Khalilli</p>
+    </footer>
     </body>
-
-     <footer>
-        <p>© Copyright 2025 Rashad Khalilli</p>
-     </footer>
-</html>
+    </html>

@@ -1,91 +1,69 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Weekly Schedule — My Personal Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link type="image/png" sizes="16x16" rel="icon" href= "images/favicon.png">
-  </head>
-  <body>
-    <header id="top">
-      <h1>Weekly Schedule</h1>
-      <nav>
-        <a href="home.html">Home</a> |
-        <a href="education.html">Education</a> |
-        <a href="weeklyschedule.html">Weekly Schedule</a> |
-        <a href="contactme.html">Contact</a> |
-        <a href="questionnarie.html">Questionnaire</a> |
-      </nav>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weekly Schedule — Flexbox Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weekly Schedule</h1>
+    <nav>
+      <a href="home.html">Home</a> |
+      <a href="education.html">Education</a> |
+      <a href="weeklyschedule.html">Weekly Schedule</a> |
+      <a href="contactme.html">Contact</a> |
+      <a href="questionnarie.html">Questionnaire</a> |
+    </nav>
+  </header>
 
-      <section aria-labelledby="sched-heading">
-        <h2 id="sched-heading">Monday-Sunday Schedule</h2>
+  <section class="schedule-container">
 
-        <!-- Equal-size cells + centered text:
-            - width="100%" + <colgroup> for equal column widths
-            - height on each row for equal row height
-            - align="center" + valign="middle" to center text -->
-        <table width="100%" border="1" cellpadding="12" cellspacing="0" rules="all" frame="box">
+    <div class="day-card">
+      <h3>Monday</h3>
+      <div class="time-slot"><strong>13:00–14:15:</strong> Computer Networks</div>
+      <div class="time-slot"><strong>14:30–15:45:</strong> Azerbaijani Culture</div>
+      <div class="time-slot"><strong>17:30–18:45:</strong> Competitive Programming</div>
+    </div>
 
-          <!-- 8 equal-width columns -->
-          <colgroup>
-            <col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%">
-            <col width="12.5%"><col width="12.5%"><col width="12.5%"><col width="12.5%">
-          </colgroup>
+    <div class="day-card">
+      <h3>Tuesday</h3>
+      <div class="time-slot"><strong>10:00–11:15:</strong> Web &amp; Mobile I</div>
+    </div>
 
-          <thead>
-            <tr align="center" valign="middle" height="54">
-              <th scope="col">Time</th>
-              <th scope="col">Monday</th>
-              <th scope="col">Tuesday</th>
-              <th scope="col">Wednesday</th>
-              <th scope="col">Thursday</th>
-              <th scope="col">Friday</th>
-              <th scope="col">Saturday</th>
-              <th scope="col">Sunday</th>
-            </tr>
-          </thead>
+    <div class="day-card">
+      <h3>Wednesday</h3>
+      <div class="time-slot"><strong>11:30–12:45:</strong> Database Systems</div>
+      <div class="time-slot"><strong>14:30–15:45:</strong> Azerbaijani Culture</div>
+    </div>
 
-          <tbody>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">08:30-09:45</th>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">10:00-11:15</th>
-              <td></td><td>Web &amp; Mobile I</td><td></td><td>Web &amp; Mobile I</td><td></td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">11:30-12:45</th>
-              <td></td><td></td><td>Database Systems</td><td></td><td>Database Systems</td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">13:00-14:15</th>
-              <td>Computer Networks</td><td></td><td></td><td></td><td>Computer Networks</td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">14:30-15:45</th>
-              <td>Azerbaijani Culture</td><td></td><td>Azerbaijani Culture</td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">16:00-17:15</th>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">17:30-18:45</th>
-              <td>Competetive Programming</td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr align="center" valign="middle" height="64">
-              <th scope="row">19:00-20:15</th>
-              <td></td><td></td><td></td><td></td><td>Competetive Programming</td><td></td><td></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <div class="day-card">
+      <h3>Thursday</h3>
+      <div class="time-slot"><strong>10:00–11:15:</strong> Web &amp; Mobile I</div>
+    </div>
 
-      <footer>
-        <p>© Copyright 2025 Rashad Khalilli</p>
-      </footer>
+    <div class="day-card">
+      <h3>Friday</h3>
+      <div class="time-slot"><strong>11:30–12:45:</strong> Database Systems</div>
+      <div class="time-slot"><strong>13:00–14:15:</strong> Computer Networks</div>
+      <div class="time-slot"><strong>19:00–20:15:</strong> Competitive Programming</div>
+    </div>
 
-  </body>
+    <div class="day-card">
+      <h3>Saturday</h3>
+      <div class="time-slot">— Free Day —</div>
+    </div>
+
+    <div class="day-card">
+      <h3>Sunday</h3>
+      <div class="time-slot">— Free Day —</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Rashad Khalilli</p>
+  </footer>
+</body>
 </html>

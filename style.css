@@ -1,0 +1,555 @@
+body {
+  background-color: #f8fafc;         
+  font-family: 'Open Sans', sans-serif; 
+  width: 90%;                          
+  margin: 0 auto;                      
+  color: #222;                         
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+hr {
+  width: 40%;             
+  border: none;             
+  border-top: 4px dashed #0077b6; 
+  margin: 2rem auto;  
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;      
+  object-fit: cover;
+  display: block;
+  margin: 1rem 0 1.5rem 0;  
+  transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);    
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;     
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #0077b6;   
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f4ff;     
+  transition: background-color 0.3s ease;
+}
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;        
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+li {
+  background-color: #f2f8ff;   
+  margin-bottom: 10px;        
+  padding: 12px 16px;
+  border-left: 5px solid #0077b6; 
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #e6f4ff;
+  transform: scale(1.02);
+}
+
+li::before {
+  content: "• ";             
+  color: #0077b6;          
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+form {
+  max-width: 600px;              
+  margin: 2rem auto;                
+  background-color: #f2f8ff;       
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #0077b6;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+  outline: none;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005f87;
+  transform: scale(1.05);
+}
+
+
+form * {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+  outline: none;
+}
+
+textarea {
+  resize: none;              
+  min-height: 120px;     
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005f87;
+  transform: scale(1.05);
+}
+
+
+#phone-contact,
+#phone-contact + p {
+  text-align: center;
+}
+
+#phone-contact + p a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#phone-contact + p a:hover {
+  text-decoration: underline;
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #0077b6; 
+  margin: 8px 0 16px 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+h2:hover::after {
+  width: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  width: 90%;
+  margin: 0 auto;
+  color: #222;
+  line-height: 1.6;
+}
+
+    .edu-wrapper {
+      width: 90%;
+      margin: 2rem auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .edu-card {
+      float: left;
+      width: 45%;
+      margin: 2.5%;
+      background-color: #e6f4ff;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      min-height: 180px;
+      transition: transform 0.3s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .edu-card h3 {
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+    }
+
+    .edu-card p {
+      margin: 0.3rem 0;
+    }
+
+    .edu-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background-color: #0077b6;
+      border-radius: 12px 0 0 12px;
+    }
+
+    @media (max-width: 768px) {
+      .edu-card {
+        float: none;
+        width: 90%;
+        margin: 1rem auto;
+      }
+    }
+
+    .home-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "photo intro"
+        "hobbies hobbies";
+      gap: 2rem;
+      width: 90%;
+      margin: 2rem auto;
+      align-items: start;
+    }
+
+    .profile-photo {
+      grid-area: photo;
+      justify-self: center;
+      text-align: center;
+    }
+
+    .profile-photo img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo img:hover {
+      transform: scale(1.05);
+    }
+
+    .intro {
+      grid-area: intro;
+    }
+
+    .intro h2 {
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .hobbies {
+      grid-area: hobbies;
+      background-color: #f2f8ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hobbies h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .hobby-item {
+      background-color: #e6f4ff;
+      border-left: 5px solid #0077b6;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .hobby-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .hobby-item h3 {
+      color: #005f87;
+    }
+
+    iframe, img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .home-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "photo"
+          "intro"
+          "hobbies";
+      }
+    }
+
+        .schedule-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem auto;
+      width: 90%;
+    }
+
+    .day-card {
+      flex: 1 1 250px;
+      background-color: #e6f4ff;
+      border-left: 6px solid #0077b6;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .day-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .day-card h3 {
+      color: #0077b6;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+
+    .time-slot {
+      background: #f8fafc;
+      border-radius: 6px;
+      margin: 0.4rem 0;
+      padding: 0.5rem;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .time-slot strong {
+      color: #005f87;
+    }
+
+    @media (max-width: 768px) {
+      .day-card {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* ===== UNIFIED NAVIGATION BAR ===== */
+
+  header {
+    position: sticky;     
+    top: 0;
+    background-color: #0077b6;
+    padding: 0.8rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  header h1 {
+    color: white;
+    margin: 0.3rem 0;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #fff;
+    color: #0077b6;
+  }
+
+  nav a.active {
+    background-color: #005f87;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  nav a.active:hover {
+    background-color: #005f87;
+    color: #fff;
+  }
+
+  /* ===== HOME PAGE PHOTO GALLERY ===== */
+
+.gallery {
+  width: 90%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  background: #f2f8ff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Responsive: 1 image per row on mobile */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
